@@ -3,8 +3,8 @@ import ProfileComponent from './Profile/ProfileComponent';
 import PropTypes from "prop-types";
 
 function App() {
-  const styleObject={
-    color: "grey",
+  const styleSheet={
+    color: "pink",
     textAlign :"center",
     fontSize :"100%",
     fontFamily :"Arial",
@@ -13,7 +13,7 @@ function App() {
     alert(`Hi, I'm Beya Nasr`);
   };
   return (
-    <div  style={styleObject}>
+    <div  style={styleSheet}>
         <ProfileComponent  FullName="Beya Nasr"
         bio="I am a web development student at GoMyCode "
         profession="Student"
@@ -25,7 +25,7 @@ function App() {
   );
 };
 ProfileComponent.defaultProps = {
-  FullName: "uncknown",
+  FullName: "anonymous",
   image:"https://cdn1.vectorstock.com/i/thumb-large/45/70/female-avatar-profile-picture-silhouette-light-vector-4684570.jpg",
 };
 ProfileComponent.PropTypes = {
